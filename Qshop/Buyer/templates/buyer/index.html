@@ -1,0 +1,61 @@
+{% extends 'buyer/base.html' %}
+{% load static %}
+<body>
+    {% block content %}
+
+    <!-- 头部结束 -->
+
+        <div id="lunbo"> </div>
+
+        
+        <div class="shop_list">
+            <div class="list1_box">
+                {% for goods in goodslist %}
+                <div class="list_box">
+                    <dl>
+                        <a href="/buyer/goodsdetail/{{ goods.id }}">
+                        <dt>
+                            <img src="/static{{goods.image_set.filter.first.img_address.url }} " />
+                        </dt>
+                        <dd align="center">
+                            <p>{{ goods.goods_name }}</p>
+                            <p>￥{{ goods.goods_now_price }}元</p>
+                        </dd>
+                        </a>
+                    </dl>
+                </div>
+                {% endfor %}
+
+
+
+                
+            </div>
+
+        </div>
+    {% endblock %}
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

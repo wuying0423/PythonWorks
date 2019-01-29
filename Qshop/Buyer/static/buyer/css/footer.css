@@ -1,0 +1,65 @@
+/*------页尾------*/
+.footer_service{ background:#e0e0e0; margin-top:50px; padding:30px 0;}
+.footer_service li{ float:left; width:190px; height:42px; margin-left:55px; _margin-left:44px; padding-left:55px; background:url(../images/footer_service_icon.png) no-repeat left top;}
+.footer_service .s1{ background-position:0 0;}
+.footer_service .s2{ background-position:0 -42px;}
+.footer_service .s3{ background-position:0 -84px;}
+.footer_service .s4{ background-position:0 -126px;}
+.footer_service li b{ display:block; padding-left:15px; color:#007f4d; font: normal 18px/25px "Microsoft YaHei"; border-left:1px solid #a6a6a6;}
+.footer_service li span{ display:block; padding-left:15px; border-left:1px solid #a6a6a6}
+
+.footer{zoom: 1; clear: both; position: relative; padding-bottom:20px; border-top:1px solid #e0e0e0}
+.footer .wrap{ margin:50px auto 0;}
+.footer dl{width:190px; float:left; margin-left:50px; display:inline;}
+.footer dl dt{ height:23px; line-height:23px; background:url(../images/footer_icon.png) no-repeat; font-size:14px; text-indent:40px;}
+.footer .col1 dt{background-position:0 0;}
+.footer .col2 dt{background-position:0 -23px;}
+.footer .col3 dt{background-position:0 -46px;}
+.footer .col4 dt{background-position:0 -69px;}
+.footer .col5 dt{background-position:0 -92px;}
+.footer dl dd{border-left:1px dashed #A8A8A8; padding-left:20px; height:110px; min-height:110px; margin:15px 0 0 13px;}
+.footer dl dd a{color:#575556; line-height:22px;}
+.footer dl dd a:hover{text-decoration:underline; color:#008842;}
+.footer .service{clear:both; text-align:center; padding:60px 0 20px; color:#008842; font-size:14px;}
+.footer .service span{ display:inline-block; padding:0 10px;}
+.footer .copyright{clear:both; color:#717171; text-align:center; line-height:22px; }
+.footer .copyright a{color:#717171;}
+.footer .copyright a:hover{color:#008842;}
+.footer .authentication a{ display:inline-block; position: relative; margin:0 10px; zoom: 1; vertical-align:middle}
+
+/*------侧边悬浮导航------*/
+.sidebar { display:block; z-index: 100;/* position:absolute;跟随定位*/ position:fixed; bottom: 20px; right: 47%; margin-right: -625px; /*IE屏幕定位*/ _position: absolute; _bottom: auto; _top:expression(eval(document.documentElement.scrollTop)); _margin-top: 630px; /*IE屏幕定位END*/ width:56px; }
+.w1280 .sidebar{ position: fixed; right:7px; margin-right:0;}
+.sidebar .s-btn { overflow: hidden; display: block; width:50px; height: 42px; margin-bottom:10px; background:url(../images/sidebar.png) no-repeat left top }
+.sidebar .goTop{ display:none; _display:nblock; background-position:0 0}
+.sidebar .service{ background-position:0 -46px;}
+.sidebar .goTop:hover{ background-position:-56px 0}
+.sidebar .service:hover{ background-position:-56px -46px}
+
+
+
+
+/* add by hj*/
+.service-entry {
+    position: fixed;
+    bottom: 465px;
+    right: 19px;
+    z-index: 999;
+    display: none;
+}
+
+.service-entry a {
+    background-color: #47c39a;
+    border: 1px solid #006f36;
+    float:left;
+    margin-top:5px;float:right;
+    margin-right:5px;
+    color: #FFF;
+    box-shadow: 0 1px 1px rgba(255,255,255,.3) inset;
+    border-radius: 5px;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}

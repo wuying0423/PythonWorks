@@ -1,0 +1,34 @@
+{% extends 'buyer/base.html' %}
+
+{% block content %}
+    <!-- 头部结束 -->
+    <div class="users_box">
+        <div class="users_box_top">会员登录</div>
+        <div class="users_box_bottom">
+            <div class="box_bottom_left"><img src="/static/buyer/images/huiyuan.jpg"/></div>
+            <div class="box_bottom_right">
+
+                <form method="post" action="/buyer/login/">
+                    {% csrf_token %}
+                   
+                    <div>
+                        昵称：<input type="text" name="nickname" placeholder="请输入昵称" class="input"/>
+                    </div>
+                    <div>
+                        密码：<input type="password" name="password" placeholder="请输入密码" class="input"/>
+                    </div>
+                    <div>
+                        <input type="submit" value="登录" class="gouwu"/>
+                        {{ result.data }}
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'buyer/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="cart_list">
+        <div class="cart_top">恭喜您已经成功加入购物车</div>
+        {% if carobj.goods_id %}
+            <div class="cart_listbox">
+                <table width="100%" cellpadding="0" cellspacing="0" border='0px'>
+                    <tr>
+                        <th width='10%'>商品名称</th>
+                        <th width='20%'>商品缩略图</th>
+                        <th width='20%'>商品单价</th>
+                        <th width='20%'>商品数量</th>
+                        <th width='20%'>商品小计</th>
+                    </tr>
+
+                    <form method="post">
+
+                        <tr>
+                            <td><a href="#">{{ carobj.goods.goods_name }}</a></td>
+                            <td><a href="#"><img src="/static{{ carobj.goods.image_set.filter.first.img_address.url }}" /></a></td>
+                            <td>￥{{ carobj.goods.goods_price }}元</td>
+                            <td>{{ count }}</td>
+                            <td>￥{{ carobj.total }}</td>
+                    </form>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="6" style="text-align: center;">购物车空空如也~~，请快去购物吧！</td>
+                    </tr>
+
+                    {% endif %}
+                </table>
+                <div class="goon">
+                    <div class="clearcart">
+
+                    <a   href="/buyer/goodsdetail/{{ carobj.goods_id }}">
+                        <input type="button" value="返回详情页" class="btn"></a>
+                    </div>
+
+                    <div class="clearcart" style="float: right;">
+                    <a   href="/buyer/carlist">
+                        <input type="button" value="我的购物车" class="btn"></a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+{% endblock %}
